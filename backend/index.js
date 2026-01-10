@@ -11,7 +11,8 @@ const app = express();
 //middleware:-
 // app.use(cors());
 app.use(cors({
-  origin: ["http://localhost:5173", "https://incredible-sprinkles-c65103.netlify.app"],
+//   origin: ["http://localhost:5173", "https://incredible-sprinkles-c65103.netlify.app"],
+origin: "https://reliable-sfogliatella-a0fcd8.netlify.app",
   credentials: true
 }));
 
