@@ -21,13 +21,15 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/api/auth/login", {
+      // const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("https://gojourney-website-project-backend.onrender.com/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       const data = await res.json();
+      console.log("Backend Response:", data);
 
       if (res.ok) {
         console.log("Login Successful");

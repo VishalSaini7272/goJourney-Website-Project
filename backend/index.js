@@ -11,7 +11,7 @@ const app = express();
 //middleware:-
 // app.use(cors());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://incredible-sprinkles-c65103.netlify.app"],
   credentials: true
 }));
 
