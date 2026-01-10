@@ -1,0 +1,242 @@
+/* ------- HERO SLIDER-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 500%; /* because now 5 images */
+  height: 100%;
+  animation: slide 15s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  90% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -400%;
+  }
+}
+
+/* HERO TEXT */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* ------TOUR SECTION---------*/
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 600;
+}
+
+.section h3 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards */
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  height: 1150px;
+}
+
+.tour-card {
+  background: #f8f9fa;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.tour-card:hover {
+  transform: translateY(-9px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.tour-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.tour-card p {
+  color: #666;
+  margin: 8px 0 20px;
+}
+
+/* Book Now Button */
+.bookNowBtn {
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #2563eb;
+  cursor: pointer;
+  width: 120px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.bookNowBtn:hover {
+  background-color: #1e40af;
+}
+/* Button */
+.btn {
+  margin-top: 65px;
+  padding: 12px 30px;
+  background: #fabe28;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e3b221;
+}
+
+/* DESTINATION REGION TABS */
+.directions-name {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 25px 0;
+}
+
+.directions-name span {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s;
+}
+
+.directions-name span:hover {
+  color: #fabe28;
+  transform: scale(1.1);
+}
+
+/* REGION IMAGE SLIDER (VISIBLE ON HOVER) */
+.region-slider {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.region-slides {
+  display: flex;
+  gap: 20px;
+  animation: regionSlide 10s linear infinite;
+}
+
+@keyframes regionSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* REGION CARD IMAGE */
+.region-card {
+  min-width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.region-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.region-card img:hover {
+  transform: scale(1.08);
+}

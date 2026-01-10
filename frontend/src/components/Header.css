@@ -1,0 +1,218 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------HEADER--------*/
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, #162d61, #96aff4); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAV CONTAINER */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #38bdf8; 
+  cursor: pointer;
+}
+
+.logo b {
+  color: #facc15; 
+}
+
+/* ----------MENU-------*/
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+/* LINKS */
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #e5e7eb; 
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.nav-menu li a:hover {
+  color: #facc15; 
+}
+
+/* UNDERLINE ANIMATION */
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #facc15;
+  transition: 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+
+/* Profile Wrapper */
+.profile-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Profile Icon */
+.profile-icon {
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Box */
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #d8d6d6;
+  width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  text-align: left;
+}
+
+
+/* User Info */
+.profile-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.profile-email {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Logout Button */
+.logout-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+}
+
+
+/* ------MOBILE ICON----- */
+.mobile-menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* ------ TABLET-----*/
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .nav-menu li a {
+    font-size: 15px;
+  }
+}
+
+/* ---- MOBILE -----*/
+@media (max-width: 768px) {
+
+  /* MOBILE MENU */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: linear-gradient(180deg, #0f172a, #1e3a8a);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 90px;
+    padding-left: 30px;
+    gap: 25px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li a {
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+/* SMALL MOBILE  */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-menu {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .nav-menu li a {
+    font-size: 17px;
+  }
+}

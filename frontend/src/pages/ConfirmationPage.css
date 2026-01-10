@@ -1,0 +1,133 @@
+.confirmation-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 15px;
+  background: #f8fafc;
+}
+
+.confirmation-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #fff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* -----DETAILS-----*/
+.details-box {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.details-box h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.detail-row.total {
+  font-weight: bold;
+}
+
+/*-----GUEST----*/
+.guest-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.guest-box h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* ----- NEXT-----*/
+.next-box {
+  background: #eff6ff;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.next-box h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.next-box ul {
+  padding-left: 18px;
+  font-size: 13px;
+  color: #1e40af;
+}
+
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #2563eb;
+  background: #fff;
+}
+
+.btns .primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.btns .primary:hover {
+  background: #1d4ed8;
+}
+
+.btns .outline:hover {
+  background: #eff6ff;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #6b7280;
+}

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENT BOX */
+.about-content {
+  max-width: 900px;
+  width: 100%;
+  background: #e0ebf1;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADINGS */
+.about-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 25px;
+}
+
+.about-content h3 {
+  font-size: 26px;
+  margin: 25px 0 10px;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* TEXT */
+.about-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+/* HORIZONTAL LINE */
+.about-content hr {
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 30px 0;
+}
+
+/* LISTS */
+.offer-list,
+.why-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.offer-list li,
+.why-list li {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+/* CLOSING TEXT */
+.closing-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.closing-text span {
+  color: #2563eb;
+}
+
+/* -------RESPONSIVE DESIGN------*/
+
+/* TABLET (768px and below) */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 40px 25px;
+  }
+
+  .about-content h1 {
+    font-size: 34px;
+  }
+
+  .about-content h3 {
+    font-size: 22px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 40px 12px;
+  }
+
+  .about-content {
+    padding: 30px 18px;
+    border-radius: 12px;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
+  }
+
+  .about-content h3 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .offer-list li,
+  .why-list li {
+    font-size: 14.5px;
+  }
+
+  .closing-text {
+    font-size: 16px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,86 @@
+.honeymoon-page {
+  padding: 80px 8%;
+  background: #fff1f2;
+}
+
+.honeymoon-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.honeymoon-header h1 {
+  font-size: 42px;
+  color: #9f1239;
+}
+
+.honeymoon-header p {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* GRID */
+.honeymoon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.honeymoon-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.honeymoon-card:hover {
+  transform: translateY(-8px);
+}
+
+.honeymoon-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.honeymoon-content {
+  padding: 20px;
+}
+
+.honeymoon-content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #881337;
+}
+
+.honeymoon-content .desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.honeymoon-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.honeymoon-btn {
+  width: 100%;
+  padding: 10px;
+  background:  #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.honeymoon-btn:hover {
+  background: #1e40af;
+}
