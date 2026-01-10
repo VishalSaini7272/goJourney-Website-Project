@@ -49,6 +49,8 @@ Mongoose
 Postman,
 Git & GitHub,
 VS Code,
+Netlify,
+Render
 
 #API Endpoints:-
 
@@ -72,6 +74,6 @@ Collection: users
 #Developer Info:-
 Developer: Vishal Saini
 Role: Full Stack Developer(MERN)
-GitHub: https://github.com/VishalSaini7272
-Deploy link (Frontend) :
-Deploy link (Backend) :
+GitHub project link : https://github.com/VishalSaini7272/goJourney-Website-Project/tree/main
+Deploy link (Frontend) : https://gojourneywebsite.netlify.app
+Deploy link (Backend) : https://gojourney-website-project-backend.onrender.com
