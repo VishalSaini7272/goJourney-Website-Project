@@ -49,6 +49,8 @@ Mongoose
 Postman,
 Git & GitHub,
 VS Code,
+Netlify,
+Render
 
 #API Endpoints:-
 
