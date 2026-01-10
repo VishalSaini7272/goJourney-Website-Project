@@ -75,5 +75,5 @@ Collection: users
 Developer: Vishal Saini
 Role: Full Stack Developer(MERN)
 GitHub project link : https://github.com/VishalSaini7272/goJourney-Website-Project/tree/main
-Deploy link (Frontend) : https://reliable-sfogliatella-a0fcd8.netlify.app
+Deploy link (Frontend) : https://gojourneywebsite.netlify.app
 Deploy link (Backend) : https://gojourney-website-project-backend.onrender.com
