@@ -73,5 +73,5 @@ Collection: users
 Developer: Vishal Saini
 Role: Full Stack Developer(MERN)
 GitHub: https://github.com/VishalSaini7272
-Deploy link (Frontend) :
-Deploy link (Backend) :
+Deploy link (Frontend) : https://reliable-sfogliatella-a0fcd8.netlify.app
+Deploy link (Backend) : https://gojourney-website-project-backend.onrender.com
