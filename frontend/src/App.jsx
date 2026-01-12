@@ -68,9 +68,9 @@ function App() {
 
           {/* Trip Details Page */}
           <Route path="/trip/:tripId" element={<TripDetailsPage />} />
-          <Route path="/booking/:tripId" element={<BookingForm />} />
+          {/* <Route path="/booking/:tripId" element={<BookingForm />} />
           <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/confirmation" element={<ConfirmationPage />} />
+          <Route path="/confirmation" element={<ConfirmationPage />} /> */}
         </Routes>
       </BrowserRouter>
     </>
